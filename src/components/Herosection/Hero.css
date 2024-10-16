@@ -1,0 +1,42 @@
+.mainhero {
+
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+
+}
+
+.custom-button {
+    background-color: rgba(24, 23, 23, 0.529);
+    /* Background color */
+    color: white;
+    /* Text color */
+    padding: 12px 24px;
+    /* Padding */
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0px 0px 40px 0px rgba(139, 249, 232, 0.2) inset;
+    /* Custom box shadow */
+    backdrop-filter: blur(7.5px);
+    /* Backdrop blur */
+    transition: background-color 0.3s;
+    /* Smooth transition for hover effect */
+}
+
+.custom-button:hover {
+    background-color: rgba(240, 240, 240, 1);
+    /* Light gray background on hover */
+    color: rgb(1, 236, 245);
+}
+
+.relative::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 25%;
+    /* Adjust height of the gradient */
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+    z-index: 1;
+}

@@ -1,0 +1,131 @@
+/* General Styles */
+.app-footer {
+    background: #000b0f;
+ /* Dark background as in the image */
+    padding: 40px 20px;
+    color: #fff; /* Light text color */
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+  }
+  
+  .left-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-logo {
+    max-width: 150px;
+    margin-bottom: 20px;
+  }
+  
+  .social-media {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-icon {
+    font-size: 1.8rem;
+    color: #b0bec5;
+    transition: color 0.3s;
+  }
+  
+  .social-icon:hover {
+    color: #26a69a;
+  }
+  
+  /* Right Section */
+  .right-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 500px;
+  }
+  
+  .footer-header {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #cfd8dc;
+  }
+  
+  .email-section {
+    display: flex;
+    border: 2px solid #455a64;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .search-input {
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    color: #fff;
+    background-color: transparent;
+    font-size: 1rem;
+  }
+  
+  .get-started-btn {
+    padding: 10px 25px;
+    background: #8BF9E803;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .get-started-btn:hover {
+    background-color: #00796b;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .right-section {
+      align-items: center;
+      text-align: center;
+    }
+  
+    .email-section {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .get-started-btn {
+      width: 100%;
+    }
+  
+    .footer-header {
+      font-size: 1.4rem;
+    }
+  
+    .search-input {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .social-icon {
+      font-size: 1.5rem;
+    }
+  
+    .footer-header {
+      font-size: 1.2rem;
+    }
+  
+    .footer-logo {
+      max-width: 120px;
+    }
+  }
+  

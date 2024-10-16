@@ -1,0 +1,60 @@
+/* Container holding both chart and table */
+.tokenomics-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 30px;
+  background: #00161D;
+  padding-bottom: 2rem;
+  
+}
+
+/* Chart container */
+.chart-container {
+  flex: 1;
+  min-width:100px; /* Ensure the chart doesn’t shrink too much */
+  height: 400px;
+
+  margin-right: 20px;
+}
+
+/* Token information table */
+.token-info {
+  flex: 1;
+   /* Ensure the table doesn’t shrink too much */
+  margin-left: 20px;
+  background: #0C2B2FB2;
+  padding: 1rem;
+  color: aliceblue;
+}
+.token-info h2{
+    text-align: center;
+    font-size:2rem;
+    color: aliceblue;
+    
+}
+
+/* Ensure chart and table stack vertically on smaller screens */
+@media (max-width: 768px) {
+  .tokenomics-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .chart-container,
+  .token-info {
+    margin: 10px 0;
+    /* Make the chart and table take up the full width */
+    background: #0C2B2FB2;
+    padding: 1rem;
+    max-width: 10px;
+  }
+  .token-details{
+    max-width: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
